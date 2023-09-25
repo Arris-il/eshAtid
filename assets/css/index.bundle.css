@@ -49,7 +49,7 @@
 body {
     margin: 0;
     font-family: var(--bs-font-sans-serif);
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
     color: #000;
@@ -468,7 +468,7 @@ progress {
 
 @media (min-width: 1200px) {
     .display-3 {
-        font-size: 3rem
+        font-size: 5rem
     }
 }
 
@@ -3912,7 +3912,6 @@ textarea.form-control-lg {
     display: inline-block;
     margin-left: .255em;
     vertical-align: .255em;
-    content: "";
     border-top: .3em solid;
     border-right: .3em solid transparent;
     border-bottom: 0;
@@ -16384,7 +16383,7 @@ hr.or::before {
 
 .navbar-brand img {
     width: auto;
-    max-height: 3.5rem
+    max-height: 5rem
 }
 
 @media (max-width: 575.98px) {
@@ -16522,6 +16521,7 @@ hr.or::before {
         transform: translate(-50%, 0);
         left: 50%
     }
+
 
     .dropdown .dropdown-menu[class*="-md"] {
         min-width: 25vw;
@@ -17196,6 +17196,7 @@ hr.or::before {
 
 .amazing-text {
     direction: ltr !important;
+    text-align: right !important;
 }
 
 .tns-nav button.tns-nav-active::before, .tns-nav button.tns-nav-active:hover::before {
@@ -17244,20 +17245,33 @@ figure {
     height: 100%;
     min-height: 100vh !important;
 }
-@media (max-width: 576px){
-    .background-header{
-        min-height: 50vh !important;
+
+@media (max-width: 576px) {
+    .background-header {
+        min-height: 35vh !important;
     }
 
 }
-@media (min-width: 576px){
-    .background-header{
+@media (max-width: 376px) {
+    .background-header {
+        min-height: 50vh !important;
+    }
+
+    .btn-sm{
+        font-size: 10.4px;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .background-header {
         min-height: 65vh !important;
     }
 
 }
-@media screen and (min-width: 500px) and (max-width:990px){
-    .background-header{
+
+@media screen and (min-width: 500px) and (max-width: 990px) {
+    .background-header {
         min-height: 50vh !important;
     }
 }
@@ -17311,6 +17325,9 @@ figure {
         background-repeat: no-repeat;
         height: 100%;
         background-color: white;
+    }
+    .medium-text{
+        font-size: 1.2rem;
     }
 
     .min-vh-100 {
